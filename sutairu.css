@@ -1,0 +1,404 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	scroll-behavior:smooth;
+}
+
+header
+{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(2.jpg);
+	height: 200vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.main-nav
+{
+	margin-left: 600px;
+	list-style: none;
+}
+
+.main-nav li
+{
+	display: inline-block;
+	margin-top: 25px;
+}
+
+.main-nav li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "high tower text", "sans-serif";
+	font-size: 15px;
+}
+
+.main-nav li.active a
+{
+	border: 1px solid white;
+}
+
+.main-nav li a:hover
+{
+	border: 1px solid white;
+}
+
+.main-nav li:hover ul.sub{
+  display: block;
+  position: absolute;
+ }
+
+ ul.sub{
+  display: none;
+ }
+
+ ul.sub li{
+  display: block;
+  margin-top: 10px;
+
+ }
+
+.logo img
+{
+	width: 200px;
+	height: 80px;
+	float: left;
+}
+
+body
+{
+	font-family: monospace;
+}
+
+.row
+{
+	max-width: 1300px;
+	margin: auto;
+}
+
+.hero
+{
+	position: absolute;
+	width: 1200px;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+h1
+{
+	color: white;
+	text-transform: uppercase;
+	font-size: 100px;
+	text-align: center;
+	margin-top: 200px;
+	font-family: Perpetua Titling MT Bold;
+}
+
+h2
+{
+	color: white;
+	text-transform: uppercase;
+	font-size: 80px;
+	text-align: center;
+	margin-bottom: 40px;
+	font-family: gabriola regular;
+}
+
+h3
+{
+	color: white;
+	text-transform: uppercase;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 170px;
+	font-family: Century Gothic;
+}
+
+p
+{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	font-family: Century Gothic;
+  	text-shadow: 1px 1px 5px black, 0 0 30px blue, 0 0 10px darkblue;
+}
+
+.button
+{
+	margin-top: 30px;
+	margin-left: 575px;
+}
+
+.btn
+{
+	border: 1px solid white;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.to_top
+{
+	background-color: blue;
+	font-family: "high tower text";
+	display: inline-block;
+    padding: 6px 10px;
+    border: 0.15em solid #000;
+    position: fixed;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+    bottom: 10px;
+    font-weight: bold;
+	z-index:99;  
+	transition:all .5s; 
+} 
+
+.to_top:hover
+{
+	background-color: red;
+	transition: all 0.5s ease-in;
+}
+
+.btn-one
+{
+	background-color: darkgreen;
+	font-family: "high tower text";
+} 
+
+.btn-one:hover
+{
+	background-color: darkorange;
+	transition: all 0.5s ease-in;
+}
+
+.btn-two
+{
+	font-family: "high tower text";
+} 
+
+.btn-two:hover
+{
+	background-color: darkblue;
+	transition: all 0.5s ease-in;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(52,73,94,0.75);
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* Image */
+.image {
+    width:1000px; 
+    height:500px;
+}
+
+.mySlides:hover .overlay {
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot1a {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 20px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot2a {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot3a {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot1b {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot2b {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot3b {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot1c {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot2c {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot3c {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 20px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/*.active, .dot1:hover {
+  background-color: #bbb;
+}
+.active, .dot2:hover {
+  background-color: #bbb;
+}
+.active, .dot3:hover {
+  background-color: #bbb;
+}
+*/
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* MEDIA RESPONSIVE */
+@MEDIA (max-width: 1024px){
+  .main-nav {
+    margin-left: 450px;
+    
+  }
+}
